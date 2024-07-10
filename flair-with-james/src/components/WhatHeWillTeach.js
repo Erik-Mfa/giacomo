@@ -1,10 +1,10 @@
 import React from 'react';
 
 const WhatHeWillTeach = () => (
-  <section id="what-he-will-teach" className="bg-white text-black p-8" style={{ fontFamily: '"Syne", sans-serif' }}>
+  <section id="what-he-will-teach" className="bg-white text-black p-8" style={{ fontFamily: '"Holtwood One SC", serif' }}>
     <div className="container mx-auto text-center">
-      <h2 className="text-3xl font-bold mb-4">What He Will Teach</h2>
-      <ul className="text-lg list-disc list-inside mb-8">
+      <h2 className="text-5xl font-bold mb-4">What I Will be Teaching</h2>
+      <ul className="text-lg mb-8">
         <li className="mb-2 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">Advanced Pouring Techniques</li>
         <li className="mb-2 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">Juggling and Object Manipulation</li>
         <li className="mb-2 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">Signature Cocktail Creations</li>

@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.40b9446d.css",
-    "main.js": "/react-gh-pages/static/js/main.fc5c5f16.js",
-    "static/media/giacomo-3.png": "/react-gh-pages/static/media/giacomo-3.9460d8fd58149e37707f.png",
-    "static/media/giacomo-2.png": "/react-gh-pages/static/media/giacomo-2.477c82da8f9e745d65fa.png",
-    "static/media/giacomo-4.png": "/react-gh-pages/static/media/giacomo-4.60cf5ef1d7d2cf661439.png",
-    "static/media/graffiti-wall.jpg": "/react-gh-pages/static/media/graffiti-wall.498bd69f6f62f32eeaa5.jpg",
-    "index.html": "/react-gh-pages/index.html",
-    "main.40b9446d.css.map": "/react-gh-pages/static/css/main.40b9446d.css.map",
-    "main.fc5c5f16.js.map": "/react-gh-pages/static/js/main.fc5c5f16.js.map"
+    "main.css": "/giacomo/static/css/main.40b9446d.css",
+    "main.js": "/giacomo/static/js/main.167bceb1.js",
+    "static/media/giacomo-3.png": "/giacomo/static/media/giacomo-3.9460d8fd58149e37707f.png",
+    "static/media/giacomo-2.png": "/giacomo/static/media/giacomo-2.477c82da8f9e745d65fa.png",
+    "static/media/giacomo-4.png": "/giacomo/static/media/giacomo-4.60cf5ef1d7d2cf661439.png",
+    "static/media/graffiti-wall.jpg": "/giacomo/static/media/graffiti-wall.498bd69f6f62f32eeaa5.jpg",
+    "index.html": "/giacomo/index.html",
+    "main.40b9446d.css.map": "/giacomo/static/css/main.40b9446d.css.map",
+    "main.167bceb1.js.map": "/giacomo/static/js/main.167bceb1.js.map"
   },
   "entrypoints": [
     "static/css/main.40b9446d.css",
-    "static/js/main.fc5c5f16.js"
+    "static/js/main.167bceb1.js"
   ]
 }

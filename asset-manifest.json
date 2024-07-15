@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/giacomo/static/css/main.40b9446d.css",
-    "main.js": "/giacomo/static/js/main.167bceb1.js",
+    "main.css": "/giacomo/static/css/main.647e919f.css",
+    "main.js": "/giacomo/static/js/main.8ecec90d.js",
+    "static/media/clouds.png": "/giacomo/static/media/clouds.e82d395e6d9578770f47.png",
     "static/media/giacomo-3.png": "/giacomo/static/media/giacomo-3.9460d8fd58149e37707f.png",
     "static/media/giacomo-2.png": "/giacomo/static/media/giacomo-2.477c82da8f9e745d65fa.png",
     "static/media/giacomo-4.png": "/giacomo/static/media/giacomo-4.60cf5ef1d7d2cf661439.png",
-    "static/media/graffiti-wall.jpg": "/giacomo/static/media/graffiti-wall.498bd69f6f62f32eeaa5.jpg",
     "index.html": "/giacomo/index.html",
-    "main.40b9446d.css.map": "/giacomo/static/css/main.40b9446d.css.map",
-    "main.167bceb1.js.map": "/giacomo/static/js/main.167bceb1.js.map"
+    "main.647e919f.css.map": "/giacomo/static/css/main.647e919f.css.map",
+    "main.8ecec90d.js.map": "/giacomo/static/js/main.8ecec90d.js.map"
   },
   "entrypoints": [
-    "static/css/main.40b9446d.css",
-    "static/js/main.167bceb1.js"
+    "static/css/main.647e919f.css",
+    "static/js/main.8ecec90d.js"
   ]
 }

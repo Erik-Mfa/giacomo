@@ -4,15 +4,18 @@ import WhoIsJames from './components/WhoIsJames';
 import Videos from './components/Videos';
 import WhatHeWillTeach from './components/WhatHeWillTeach';
 import Contact from './components/Contact';
+import Header from './components/Header';
 import Footer from './components/Footer';
 
 function App() {
   return (
     <div>
+
       <Hero />
+      <WhatHeWillTeach />
       <WhoIsJames />
       <Videos />
-      <WhatHeWillTeach />
+      
       <Contact />
       <Footer />
     </div>

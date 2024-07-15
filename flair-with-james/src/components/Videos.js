@@ -3,8 +3,8 @@ import React from 'react';
 const Videos = () => (
   <section id="videos" className="bg-gray-200 text-black p-8">
     <div className="container mx-auto text-center">
-      <h2 className="text-5xl font-bold" style={{ fontFamily: '"Rock Salt", cursive' }}>Showcase</h2>
-      <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <h2 className="text-5xl font-bold mt-2" style={{ fontFamily: '"Rock Salt", cursive' }}>Showcase</h2>
+      <div className="mt-10 mb-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         <div className="relative" style={{ paddingBottom: '56.25%' }}>
           <iframe
             width="100%"

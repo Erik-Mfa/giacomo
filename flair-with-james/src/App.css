@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* CLOUDS ANIMATION */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@keyframes moveClouds {
+  0% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 200% -100%;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+.bg-clouds {
+  background: url('./images/clouds.png') repeat;
+  background-size: 200% 200%;
+  animation: fadeInOut 15s ease-in-out infinite, moveClouds 60s linear infinite;
 }
 
-@keyframes App-logo-spin {
+/* IMAGE AND TEXTBOX ANIMATION */
+@keyframes slip-in {
   from {
-    transform: rotate(0deg);
+    transform: translateX(-100%); /* Start from the left */
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    transform: translateX(0); /* End at original position */
+    opacity: 1;
   }
+}
+
+@keyframes slip-out {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%); /* Move out to the right */
+    opacity: 0;
+  }
+}
+
+.slip-in {
+  animation: slip-in 2s forwards;
+}
+
+.slip-out {
+  animation: slip-out 2s forwards;
 }

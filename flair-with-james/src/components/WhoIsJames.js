@@ -16,51 +16,52 @@ const WhoIsJames = () => (
 
     {/* Cloud background */}
     <div className="absolute inset-0 bg-clouds"></div>
-    
 
     {/* First Section */}
     <div className="relative mx-auto flex flex-col md:flex-row items-center justify-center">
-      {/* Textbox with slip-in effects */}
-      <div className="md:w-1/2 text-center md:text-left mt-4 md:mt-0 md:order-1 flex flex-col justify-center z-10 slip-in">
-        <div className="bg-black bg-opacity-75 p-10 hover:bg-opacity-100 transition duration-300 ease-in-out rounded-l-lg">
-          <h2 className="text-5xl font-bold text-red-500 transition-all duration-300 ease-in-out transform hover:scale-105" style={{ fontFamily: '"Gloria Hallelujah", cursive' }}>Who is James</h2>
-          <p className="mt-4 text-2xl text-white" style={{ fontFamily: '"Syne", sans-serif' }}>James is a passionate flair bartender with years of experience entertaining crowds around the world. Known for his unique style and impressive skills, he brings excitement and flair to every event.</p>
-          <p className="mt-4 text-2xl text-white" style={{ fontFamily: '"Syne", sans-serif' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat nulla id enim mattis, quis scelerisque elit ultricies. Duis in arcu nec dui sollicitudin venenatis.</p>
+      <div className="p-4 relative flex flex-col md:flex-row items-center justify-center max-w-4xl mx-auto overflow-hidden" >
+        {/* Textbox with slip-in effects */}
+        <div className="flex-1 text-center md:text-left mt-4 md:mt-0 flex flex-col justify-between p-6 md:p-10 bg-black bg-opacity-75 hover:bg-opacity-100 transition duration-300 ease-in-out rounded-l-lg "
+          style={{ maxHeight: '400px' }}
+        >
+          <h2 className="text-3xl md:text-5xl font-bold text-red-500 transition-all duration-300 ease-in-out transform hover:scale-105" style={{ fontFamily: '"Gloria Hallelujah", cursive' }}>Who is James</h2>
+          <div className="overflow-hidden">
+            <p className="mt-4 text-base md:text-base text-white" style={{ fontFamily: '"Syne", sans-serif' }}>James is a passionate flair bartender with years of experience entertaining crowds around the world. Known for his unique style and impressive skills, he brings excitement and flair to every event.</p>
+          </div>
         </div>
-      </div>
-      {/* Image from left with hover effect, closer to the right */}
-      <div className="md:w-1/3 mt-4 md:mt-0 md:order-2 relative flex justify-center z-10">
-        <img 
-          src={jamesPhoto1} 
-          alt="James" 
-          className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105" 
-          style={{ borderRadius: 10, position: 'relative', zIndex: 1 }} 
-        />
+        {/* Image with hover effect */}
+        <div className="flex-1 mt-4 mr-4 md:mt-0 flex justify-center">
+          <img 
+            src={jamesPhoto1} 
+            alt="James" 
+            className="w-full h-auto max-w-full transition-transform duration-300 ease-in-out hover:scale-105" 
+            style={{ borderRadius: 10 }} 
+          />
+        </div>
       </div>
     </div>
 
-
-
-
     {/* Second Section */}
     <div className="relative mx-auto flex flex-col md:flex-row items-center justify-center p-8">
-      {/* Textbox with slip-in effects */}
-      <div className="md:w-1/2 text-center md:text-left mt-4 md:mt-0 md:order-1 flex flex-col justify-center z-10 slip-in">
-        <div className="bg-black bg-opacity-75 p-10 hover:bg-opacity-100 transition duration-300 ease-in-out rounded-l-lg">
-          <h2 className="text-5xl font-bold text-red-500 transition-all duration-300 ease-in-out transform hover:scale-105" style={{ fontFamily: '"Gloria Hallelujah", cursive' }}>More About James</h2>
-          <p className="mt-4 text-2xl text-white" style={{ fontFamily: '"Syne", sans-serif' }}>James started his career in flair bartending over a decade ago, mastering the art of mixology and entertainment. He has performed at prestigious events and venues worldwide, leaving a lasting impression on everyone he encounters.</p>
-          <p className="mt-4 text-2xl text-white" style={{ fontFamily: '"Syne", sans-serif' }}>Curabitur non ante non justo luctus pretium. Vestibulum volutpat pharetra enim, a lobortis dui mollis vel. Fusce consectetur, justo id aliquet varius, neque lectus scelerisque libero, in suscipit ligula urna nec magna.</p>
+      <div className="p-4 relative flex flex-col md:flex-row items-center justify-center max-w-4xl mx-auto overflow-hidden">
+        {/* Textbox with slip-in effects */}
+        <div className="flex-1 text-center md:text-left mt-4 md:mt-0 flex flex-col justify-between p-6 md:p-10 bg-black bg-opacity-75 hover:bg-opacity-100 transition duration-300 ease-in-out rounded-l-lg"
+          style={{ maxHeight: '350px' }}
+        >
+          <h2 className="text-3xl md:text-5xl font-bold text-red-500 transition-all duration-300 ease-in-out transform hover:scale-105" style={{ fontFamily: '"Gloria Hallelujah", cursive' }}>More About James</h2>
+          <div className="overflow-auto">
+            <p className="mt-4 text-base md:text-base text-white" style={{ fontFamily: '"Syne", sans-serif' }}>James started his career in flair bartending over a decade ago, mastering the art of mixology and entertainment. He has performed at prestigious events and venues worldwide, leaving a lasting impression on everyone he encounters.</p>
+          </div>
         </div>
-      </div>
-
-      {/* Image from right with hover effect, further to the right */}
-      <div className="md:w-1/3 mt-4 md:mt-0 md:order-2 relative flex justify-center z-10" style={{ marginRight: '50px' }}>
-        <img 
-          src={jamesPhoto2} 
-          alt="James" 
-          className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105" 
-          style={{ borderRadius: 10 }} 
-        />
+        {/* Image with hover effect */}
+        <div className="flex-1 mt-4 mr-4 md:mt-0 flex justify-center">
+          <img 
+            src={jamesPhoto2} 
+            alt="James" 
+            className="w-full h-auto max-w-full transition-transform duration-300 ease-in-out hover:scale-105" 
+            style={{ borderRadius: 10, maxHeight: '500px' }} 
+          />
+        </div>
       </div>
     </div>
   </section>

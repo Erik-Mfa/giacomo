@@ -30,32 +30,95 @@
 }
 
 /* IMAGE AND TEXTBOX ANIMATION */
-@keyframes slip-in {
+@keyframes fade-in {
   from {
-    transform: translateX(-100%); /* Start from the left */
     opacity: 0;
   }
   to {
-    transform: translateX(0); /* End at original position */
     opacity: 1;
   }
 }
 
-@keyframes slip-out {
-  from {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  to {
-    transform: translateX(100%); /* Move out to the right */
+.fade-in {
+  animation: fade-in 2s forwards;
+}
+
+/* Custom class for overlay positioning */
+.overlay-top {
+  top: 10%; /* Adjust this value to move it further up or down */
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+/* HERO SECTION */
+
+/* Animation for fading in and falling effect */
+@keyframes fadeInFromTop {
+  0% {
     opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-.slip-in {
-  animation: slip-in 2s forwards;
+.fade-in-text {
+  display: block; /* Ensures each text span is on a new line */
+  animation: fadeInFromTop 1s ease-out forwards;
+  opacity: 0; /* Start with hidden */
+  margin-bottom: 0rem; /* Reduced margin between text segments */
+  line-height: 1; /* Adjust line height to fit text more closely */
 }
 
-.slip-out {
-  animation: slip-out 2s forwards;
+/* Add delays for each span to appear one by one */
+.fade-in-text:nth-of-type(1) {
+  animation-delay: 0s;
+}
+
+.fade-in-text:nth-of-type(2) {
+  animation-delay: 0.4s;
+}
+
+.fade-in-text:nth-of-type(3) {
+  animation-delay: 0.8s;
+}
+
+.fade-in-text:nth-of-type(4) {
+  animation-delay: 1.2s;
+}
+
+.fade-in-text:nth-of-type(5) {
+  animation-delay: 1.6s;
+}
+
+/* Mobile adjustments */
+@media (max-width: 640px) {
+  .relative {
+    position: relative; /* Ensure proper positioning */
+  }
+  
+  .absolute {
+    position: absolute;
+    top: 10%; /* Adjust the top positioning */
+    left: 0;
+    width: 100%;
+    height: auto; /* Allow height to adjust based on content */
+  }
+  
+  .bg-black {
+    max-height: 60%; /* Adjust the maximum height of the text box */
+    overflow: hidden; /* Hide overflow to keep text within bounds */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .text-sm {
+    font-size: 14px; /* Adjust font size for mobile screens */
+  }
+  
+  .fade-in-text {
+    font-size: 14px; /* Adjust text size for better fit */
+  }
 }

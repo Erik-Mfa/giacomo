@@ -1,10 +1,10 @@
 import React from 'react';
 
 const Videos = () => (
-  <section id="videos" className="bg-gray-200 text-black p-8">
-    <div className="container mx-auto text-center">
-      <h2 className="text-5xl font-bold mt-2" style={{ fontFamily: '"Rock Salt", cursive' }}>Showcase</h2>
-      <div className="mt-10 mb-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+  <section id="videos" className="bg-gray-200 text-black p-10">
+    <div className="container mx-auto text-center mt-4">
+      <h2 className="text-5xl font-bold mb-10 transform transition-all duration-300 hover:scale-105" style={{ fontFamily: '"Rock Salt", cursive' }}>Showcase</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-20">
         <div className="relative" style={{ paddingBottom: '56.25%' }}>
           <iframe
             width="100%"
@@ -16,7 +16,7 @@ const Videos = () => (
             className="absolute top-0 left-0 w-full h-full object-cover hover:scale-105 transition duration-300"
           ></iframe>
         </div>
-        <div className="relative" style={{ paddingBottom: '56.25%' }}>
+        <div className="relative" style={{ paddingBottom: '56.5%' }}>
           <iframe
             width="100%"
             height="100%"

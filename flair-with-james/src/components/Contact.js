@@ -20,7 +20,7 @@ const ContactForm = () => (
               <input
                 type="text"
                 name="name"
-                className="mt-1 p-3 border border-gray-300 rounded-full w-full focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500 transition duration-300"
+                className="mt-1 p-3 border border-gray-300  w-full focus:outline-none focus:border-purple-600 focus:ring-1 focus:ring-purple-600 transition duration-300"
                 placeholder="Enter your name"
               />
             </label>
@@ -31,7 +31,7 @@ const ContactForm = () => (
               <input
                 type="email"
                 name="email"
-                className="mt-1 p-3 border border-gray-300 rounded-full w-full focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500 transition duration-300"
+                className="mt-1 p-3 border border-gray-300  w-full focus:outline-none focus:border-purple-600 focus:ring-1 focus:ring-purple-600 transition duration-300"
                 placeholder="Enter your email"
               />
             </label>
@@ -41,14 +41,14 @@ const ContactForm = () => (
               Message
               <textarea
                 name="message"
-                className="mt-1 p-3 border border-gray-300 rounded-lg w-full h-32 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500 transition duration-300"
+                className="mt-1 p-3 border border-gray-300 rounded-lg w-full h-32 focus:outline-none focus:border-purple-600 focus:ring-1 focus:ring-purple-600 transition duration-300"
                 placeholder="Enter your message"
               ></textarea>
             </label>
           </div>
           <button
             type="submit"
-            className="w-full bg-gradient-to-r from-red-500 to-purple-500 text-white py-3 px-4 rounded-full shadow-lg hover:from-red-600 hover:to-purple-600 transition duration-300 transform hover:scale-105"
+            className="w-full bg-gradient-to-r from-red-500 to-purple-500 text-white py-3 px-4  shadow-lg hover:from-red-600 hover:to-purple-600 transition duration-300 transform hover:scale-105"
           >
             Send Message
           </button>

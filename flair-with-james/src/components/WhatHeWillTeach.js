@@ -1,17 +1,21 @@
 import React from 'react';
 
 const WhatHeWillTeach = () => (
-  <section id="what-he-will-teach" className="bg-white text-black p-8" style={{ fontFamily: '"Holtwood One SC", serif' }}>
-    <div className="container mx-auto text-center">
-      <h2 className="text-5xl font-bold mb-10">What I Will be Teaching</h2>
-      <ul className="text-lg mb-8">
-        <li className="mb-2 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">Advanced Pouring Techniques</li>
-        <li className="mb-2 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">Juggling and Object Manipulation</li>
-        <li className="mb-2 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">Signature Cocktail Creations</li>
-        <li className="mb-2 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">Entertaining an Audience</li>
-        <li className="mb-2 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">Flair Bartending Choreography</li>
+  <section
+    id="what-he-will-teach"
+    className="bg-white text-black p-12 relative"
+    style={{ fontFamily: '"Holtwood One SC", serif' }}
+  >
+    <div className="container mx-auto text-center p-12">
+      <h2 className="text-5xl font-bold mb-12">What I Will be Teaching</h2>
+      <ul className="text-lg mb-10">
+        <li className="mb-3 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">Advanced Pouring Techniques</li>
+        <li className="mb-3 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">Juggling and Object Manipulation</li>
+        <li className="mb-3 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">Signature Cocktail Creations</li>
+        <li className="mb-3 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">Entertaining an Audience</li>
+        <li className="mb-3 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">Flair Bartending Choreography</li>
       </ul>
-      <div className="relative mb-10">
+      <div className="relative mb-12">
         <video 
           src="/images/giacomo-2.png" 
           controls 
@@ -23,6 +27,7 @@ const WhatHeWillTeach = () => (
         </div>
       </div>
     </div>
+
   </section>
 );
 

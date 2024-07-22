@@ -19,10 +19,11 @@ const WhoIsJames = () => (
 
     {/* First Section */}
     <div className="relative mx-auto flex flex-col md:flex-row items-center justify-center">
-      <div className="p-4 relative flex flex-col md:flex-row items-center justify-center max-w-4xl mx-auto overflow-hidden" >
+      <div className="p-4 relative flex flex-col md:flex-row items-center justify-center max-w-4xl mx-auto overflow-hidden">
         {/* Textbox with slip-in effects */}
-        <div className="flex-1 text-center md:text-left mt-4 md:mt-0 flex flex-col justify-between p-6 md:p-10 bg-black bg-opacity-75 hover:bg-opacity-100 transition duration-300 ease-in-out rounded-l-lg "
-          style={{ maxHeight: '400px' }}
+        <div
+          className="flex-1 text-center md:text-left mt-4 md:mt-0 flex flex-col justify-between p-6 md:p-10 bg-black bg-opacity-75 hover:bg-opacity-100 transition duration-300 ease-in-out rounded-t-lg md:rounded-l-lg sticky top-0 z-10"
+          style={{ maxHeight: '400px', borderTop: '2px solid #BF5B04' }}
         >
           <h2 className="text-3xl md:text-5xl font-bold text-red-500 transition-all duration-300 ease-in-out transform hover:scale-105" style={{ fontFamily: '"Gloria Hallelujah", cursive' }}>Who is James</h2>
           <div className="overflow-hidden">
@@ -30,7 +31,7 @@ const WhoIsJames = () => (
           </div>
         </div>
         {/* Image with hover effect */}
-        <div className="flex-1 mt-4 mr-4 md:mt-0 flex justify-center">
+        <div className="flex-1   md:mt-0 flex justify-center">
           <img 
             src={jamesPhoto1} 
             alt="James" 
@@ -45,8 +46,9 @@ const WhoIsJames = () => (
     <div className="relative mx-auto flex flex-col md:flex-row items-center justify-center p-8">
       <div className="p-4 relative flex flex-col md:flex-row items-center justify-center max-w-4xl mx-auto overflow-hidden">
         {/* Textbox with slip-in effects */}
-        <div className="flex-1 text-center md:text-left mt-4 md:mt-0 flex flex-col justify-between p-6 md:p-10 bg-black bg-opacity-75 hover:bg-opacity-100 transition duration-300 ease-in-out rounded-l-lg"
-          style={{ maxHeight: '350px' }}
+        <div
+          className="flex-1 text-center md:text-left mt-4 md:mt-0 flex flex-col justify-between p-6 md:p-10 bg-black bg-opacity-75 hover:bg-opacity-100 transition duration-300 ease-in-out rounded-t-lg md:rounded-l-lg sticky top-0 z-10"
+          style={{ maxHeight: '350px', borderTop: '2px solid #BF5B04' }}
         >
           <h2 className="text-3xl md:text-5xl font-bold text-red-500 transition-all duration-300 ease-in-out transform hover:scale-105" style={{ fontFamily: '"Gloria Hallelujah", cursive' }}>More About James</h2>
           <div className="overflow-auto">
@@ -54,12 +56,12 @@ const WhoIsJames = () => (
           </div>
         </div>
         {/* Image with hover effect */}
-        <div className="flex-1 mt-4 mr-4 md:mt-0 flex justify-center">
+        <div className="flex-1   md:mt-0 flex justify-center">
           <img 
             src={jamesPhoto2} 
             alt="James" 
             className="w-full h-auto max-w-full transition-transform duration-300 ease-in-out hover:scale-105" 
-            style={{ borderRadius: 10, maxHeight: '500px' }} 
+            style={{ borderRadius: 10}} 
           />
         </div>
       </div>

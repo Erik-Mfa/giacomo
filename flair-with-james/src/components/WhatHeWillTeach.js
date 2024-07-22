@@ -19,7 +19,7 @@ const WhatHeWillTeach = () => (
         <video 
           src="/images/giacomo-2.png" 
           controls 
-          className="rounded-lg shadow-lg mx-auto w-2/3 lg:w-1/2 transition-transform transform hover:scale-105"
+          className="rounded-lg shadow-lg mx-auto w-3/4 sm:w-4/5 md:w-3/4 lg:w-2/3 xl:w-1/2 2xl:w-1/3 transition-transform transform hover:scale-105"
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-50 rounded-lg"></div>
@@ -27,7 +27,6 @@ const WhatHeWillTeach = () => (
         </div>
       </div>
     </div>
-
   </section>
 );
 

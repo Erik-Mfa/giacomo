@@ -16,7 +16,7 @@ const Videos = () => (
             className="absolute top-0 left-0 w-full h-full object-cover hover:scale-105 transition duration-300"
           ></iframe>
         </div>
-        <div className="relative" style={{ paddingBottom: '56.5%' }}>
+        <div className="relative" style={{ paddingBottom: '56.25%' }}>
           <iframe
             width="100%"
             height="100%"
@@ -33,6 +33,18 @@ const Videos = () => (
             height="100%"
             src="https://www.youtube.com/embed/dQw4w9WgXcQ" // Replace with your actual YouTube video URL
             title="Video 3"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="absolute top-0 left-0 w-full h-full object-cover hover:scale-105 transition duration-300"
+          ></iframe>
+        </div>
+        {/* Extra video visible only on smaller screens */}
+        <div className="relative md:hidden" style={{ paddingBottom: '56.25%' }}>
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ" // Replace with your actual YouTube video URL
+            title="Video 4"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             className="absolute top-0 left-0 w-full h-full object-cover hover:scale-105 transition duration-300"

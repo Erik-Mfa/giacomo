@@ -19,17 +19,26 @@
     background-position: 0% 100%;
   }
   100% {
-    background-position: 200% -100%;
+    background-position: 100% 0%;
   }
 }
 
 .bg-clouds {
   background: url('./images/clouds.png') repeat;
   background-size: cover; /* Adjust to cover the container */
-  animation: fadeInOut 15s ease-in-out infinite, moveClouds 30s linear infinite; /* Reduced the duration to speed up the cloud movement */
+  animation: fadeInOut 15s ease-in-out infinite, moveClouds 60s linear infinite; /* Adjusted the speed */
 }
 
-/* IMAGE AND TEXTBOX ANIMATION */
+/* Mobile adjustments */
+@media (max-width: 640px) {
+  .bg-clouds {
+    background-size: contain; /* Scale the image to fit the container without stretching */
+    background-position: center; /* Center the background image */
+    animation: fadeInOut 25s ease-in-out infinite, moveClouds 90s linear infinite; /* Slower animation speed for mobile */
+  }
+}
+
+/* Image and Textbox Animation */
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -94,37 +103,121 @@
   animation-delay: 1.6s;
 }
 
-/* Mobile adjustments */
+/* Responsive font sizes */
 @media (max-width: 640px) {
-  .relative {
-    position: relative; /* Ensure proper positioning */
+  .responsive-text {
+    font-size: 12px;
   }
-  
-  .absolute {
-    position: absolute;
-    top: 10%; /* Adjust the top positioning */
-    left: 0;
-    width: 100%;
-    height: auto; /* Allow height to adjust based on content */
-  }
-  
-  .bg-clouds {
-    background-size: 200% 200%; /* Adjust background size for mobile */
-    background-position: center; /* Center the background image */
-    animation: fadeInOut 15s ease-in-out infinite, moveClouds 30s linear infinite; /* Updated speed for mobile */
+
+  .responsive-button {
+    font-size: 20px;
   }
 
   .bg-black {
-    max-height: 60%; /* Adjust the maximum height of the text box */
-    overflow: hidden; /* Hide overflow to keep text within bounds */
-    padding: 10px; /* Adjust padding for smaller screens */
+    max-height: 60%;
+    overflow: hidden;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .responsive-text {
+    font-size: 14px;
   }
 
-  .text-sm {
-    font-size: 14px; /* Adjust font size for mobile screens */
+  .responsive-button {
+    font-size: 24px;
   }
-  
+}
+
+@media (min-width: 1025px) {
+  .responsive-text {
+    font-size: 16px;
+  }
+
+  .responsive-button {
+    font-size: 30px;
+  }
+}
+
+/* Ensure the textbox fits within the image */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.bg-black {
+  max-height: 60%; /* Adjust based on needs */
+  overflow: hidden; /* Hide overflow */
+}
+
+.max-w-full {
+  max-width: 100%;
+}
+
+@media (max-width: 640px) {
+  .text-sm {
+    font-size: 14px;
+  }
+
   .fade-in-text {
-    font-size: 14px; /* Adjust text size for better fit */
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .text-sm {
+    font-size: 16px;
+  }
+
+  .fade-in-text {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .text-sm {
+    font-size: 18px;
+  }
+
+  .fade-in-text {
+    font-size: 18px;
+  }
+}
+
+/* Textbox Specific Font Size Adjustments */
+.textbox-content {
+  font-size: 16px; /* Default font size */
+}
+
+@media (max-width: 640px) {
+  .textbox-content {
+    font-size: 12px; /* Smaller font size for small screens */
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .textbox-content {
+    font-size: 14px; /* Medium font size for medium screens */
+  }
+}
+
+@media (min-width: 1025px) {
+  .textbox-content {
+    font-size: 16px; /* Larger font size for large screens */
   }
 }

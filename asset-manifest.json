@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/giacomo/static/css/main.f33e12ab.css",
-    "main.js": "/giacomo/static/js/main.ba183f2b.js",
+    "main.css": "/giacomo/static/css/main.cd75d3b0.css",
+    "main.js": "/giacomo/static/js/main.edd73363.js",
     "static/media/clouds.png": "/giacomo/static/media/clouds.e82d395e6d9578770f47.png",
     "static/media/giacomo-3.png": "/giacomo/static/media/giacomo-3.9460d8fd58149e37707f.png",
     "static/media/giacomo-2.png": "/giacomo/static/media/giacomo-2.477c82da8f9e745d65fa.png",
     "static/media/giacomo-4.png": "/giacomo/static/media/giacomo-4.60cf5ef1d7d2cf661439.png",
     "index.html": "/giacomo/index.html",
-    "main.f33e12ab.css.map": "/giacomo/static/css/main.f33e12ab.css.map",
-    "main.ba183f2b.js.map": "/giacomo/static/js/main.ba183f2b.js.map"
+    "main.cd75d3b0.css.map": "/giacomo/static/css/main.cd75d3b0.css.map",
+    "main.edd73363.js.map": "/giacomo/static/js/main.edd73363.js.map"
   },
   "entrypoints": [
-    "static/css/main.f33e12ab.css",
-    "static/js/main.ba183f2b.js"
+    "static/css/main.cd75d3b0.css",
+    "static/js/main.edd73363.js"
   ]
 }
